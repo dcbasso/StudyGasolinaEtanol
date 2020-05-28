@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_masked_text/flutter_masked_text.dart';
-import 'package:gasolinaouetanol/widgets/logo.widget.dart';
-import 'package:gasolinaouetanol/widgets/input.widget.dart';
+import 'package:gasolinaouetanol/pages/home.page.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,37 +14,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
       ),
       home: HomePage()
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    var _gascontroller = new MoneyMaskedTextController();
-    var _etacontroller = new MoneyMaskedTextController();
-
-    return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
-      body: ListView(
-        children: <Widget>[
-          Logo(),
-          Input(
-            controller: _gascontroller,
-            label: "Gasolina",
-          ),
-          Input(
-            controller: _etacontroller,
-            label: "Etanol",
-          ),
-          FlatButton(
-            child: Text("Calcular"),
-            onPressed: () {
-              
-            },
-          ),
-        ],
-      ),
     );
   }
 }
