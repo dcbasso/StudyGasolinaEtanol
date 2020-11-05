@@ -1,6 +1,7 @@
 # gasolinaouetanol
 
-A new Flutter project.
+This project is part of "https://app.balta.io/" courses, that call's "Mobile Developer Flutter".
+This is only for study Dart to code Flutter Apps.
 
 ## Getting Started
 
